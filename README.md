@@ -11,3 +11,5 @@ La guida `tecnologie.html` approfondisce FTTH, FTTC, FTTB, FWA e ADSL. Le pagine
 La pagina di verifica copertura include collegamenti esterni a Open Fiber e FiberCop: eventuali verifiche o dati inseriti sono gestiti sui rispettivi siti, non da FiberCheck.
 
 La navigazione e il footer sono HTML statico presente in ogni pagina: quando si aggiunge una sezione, aggiornare i collegamenti in ciascuna pagina. La documentazione di ricerca è conservata in `ricerche/`.
+
+`robots.txt` consente la scansione e indica la sitemap. Su GitHub Pages pubblicato nel sottopercorso `/FiberCheck/`, i crawler cercano però il file all'origine, cioè `https://matteocomo.github.io/robots.txt`: per applicare le direttive occorre pubblicarlo anche alla radice del sito GitHub Pages dell'account. Se si usa un dominio personalizzato, aggiornare l'URL della sitemap nel file.
