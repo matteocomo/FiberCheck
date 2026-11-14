@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Guida alle tecnologie FTTH, FTTC, FTTB, FWA e ADSL: architetture, componenti e prestazioni.">
+  <meta name="theme-color" content="#0b0b0c">
+  <title>Tecnologie di connessione — FiberCheck</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenuto">Vai al contenuto</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="FiberCheck, torna alla home"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span><span>Fiber<span class="brand-accent">Check</span></span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Apri menu">
+        <span>Menu</span><span class="menu-icon" aria-hidden="true"></span>
+      </button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Navigazione principale">
+        <a href="index.html">Home</a>
+        <a href="tecnologie.html" aria-current="page">Tecnologie</a>
+        <a href="aree-infrastrutturali.html">Aree di copertura</a>
+        <a href="piano-bul.html">Piano BUL</a>
+        <a href="enti-fonti.html">Enti e istituzioni</a>
+        <a href="verifica-copertura.html">Verifica copertura</a>
+        <a href="glossario.html">Glossario</a>
+      </nav>
+    </div>
+  </header>
+  <dialog class="mobile-menu" id="mobile-menu" aria-labelledby="mobile-menu-title">
+    <div class="mobile-menu-header">
+      <span class="brand" id="mobile-menu-title"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span><span>Fiber<span class="brand-accent">Check</span></span></span>
+      <button class="menu-close" type="button" aria-label="Chiudi menu">×</button>
+    </div>
+    <nav class="mobile-nav" aria-label="Navigazione mobile">
+        <a href="index.html">Home</a>
+        <a href="tecnologie.html" aria-current="page">Tecnologie</a>
+        <a href="aree-infrastrutturali.html">Aree di copertura</a>
+        <a href="piano-bul.html">Piano BUL</a>
+        <a href="enti-fonti.html">Enti e istituzioni</a>
+        <a href="verifica-copertura.html">Verifica copertura</a>
+        <a href="glossario.html">Glossario</a>
+    </nav>
+  </dialog>
+  <main id="contenuto">
+    <header class="page-hero">
+      <div class="container">
+        <p class="breadcrumb"><a href="index.html">Home</a> / Tecnologie</p>
+        <h1>Tecnologie di<br><span>connessione.</span></h1>
+        <p>Fibra, rame e collegamenti radio: scopri come la rete di accesso porta Internet fino a casa e quali differenze contano davvero.</p>
+        <a class="button button-lime" href="#panoramica">Confronta le tecnologie <span aria-hidden="true">↓</span></a>
+      </div>
+    </header>
+    <section class="content-section" id="panoramica" aria-labelledby="panoramica-title">
+      <div class="container">
+        <div class="content-heading"><h2 id="panoramica-title">Cinque modi di<br><span>arrivare online.</span></h2><p>La rete di accesso collega l'utente alla rete dell'operatore. Il percorso e i mezzi utilizzati cambiano a seconda dell'architettura.</p></div>
+        <div class="technology-grid">
+          <a class="technology-card" href="#ftth"><strong>FTTH</strong><span>Fiber To The Home</span><p>Fibra fino all'abitazione.</p><span aria-hidden="true">↗</span></a>
+          <a class="technology-card" href="#fttc"><strong>FTTC</strong><span>Fiber To The Cabinet</span><p>Fibra fino all'armadio, poi rame.</p><span aria-hidden="true">↗</span></a>
+          <a class="technology-card" href="#fttb"><strong>FTTB</strong><span>Fiber To The Building</span><p>Fibra fino all'edificio, poi cablaggio interno.</p><span aria-hidden="true">↗</span></a>
+          <a class="technology-card" href="#fwa"><strong>FWA</strong><span>Fixed Wireless Access</span><p>Ultimo tratto tramite collegamento radio.</p><span aria-hidden="true">↗</span></a>
+          <a class="technology-card" href="#adsl"><strong>ADSL</strong><span>Asymmetric Digital Subscriber Line</span><p>Collegamento su doppino telefonico.</p><span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+    <section class="content-section details-section" aria-labelledby="details-title">
+      <div class="container">
+        <h2 id="details-title">Le tecnologie, <span>da vicino.</span></h2>
+        <article class="technology-detail" id="ftth">
+          <div class="detail-title"><span>Fibra fino a casa</span><h3>FTTH</h3></div>
+          <div class="detail-body">
+            <p>La fibra ottica raggiunge l'abitazione o l'unità dell'utente. Nelle reti ottiche passive (PON), un <a href="#componenti">OLT</a> in centrale comunica attraverso la rete di distribuzione e gli splitter con gli ONT degli utenti. Esistono anche architetture ottiche punto-punto.</p>
+            <p class="connection-path">Centrale / OLT <span>→</span> fibra e splitter <span>→</span> ONT <span>→</span> router</p>
+            <p>La fibra offre ampia capacità ed è insensibile alle interferenze elettromagnetiche, ma il segnale ottico subisce comunque attenuazione. La posa fino alle singole unità può richiedere interventi nell'edificio.</p>
+            <p>Una comune configurazione GPON prevede capacità nominali di <strong>2,48832 Gbit/s in downstream e 1,24416 Gbit/s in upstream</strong>; XGS-PON prevede <strong>9,95328 Gbit/s in ciascuna direzione</strong>. Sono capacità di linea condivise sull'albero PON, non velocità garantite al singolo cliente. Il risultato dipende anche da offerta, apparati e traffico. <a href="#fonti-tecniche">Fonti ITU-T</a>.</p>
+            <div class="pros-cons"><p><strong>Punto di forza</strong> Elevata capacità potenziale.</p><p><strong>Limite</strong> La disponibilità dipende dalla posa e dall'attivazione.</p></div>
+          </div>
+        </article>
+        <article class="technology-detail" id="fttc">
+          <div class="detail-title"><span>Fibra fino all'armadio</span><h3>FTTC</h3></div>
+          <div class="detail-body">
+            <p>La fibra raggiunge un armadio stradale; l'ultimo tratto verso l'utente utilizza il doppino in rame. Un DSLAM nell'armadio gestisce le linee, mentre un modem compatibile, generalmente VDSL2, termina il collegamento in casa.</p>
+            <p class="connection-path">Centrale <span>→</span> fibra <span>→</span> armadio / DSLAM <span>→</span> rame <span>→</span> modem</p>
+            <p>Il riuso del rame riduce la necessità di nuove pose fino a ogni abitazione. Prestazioni e stabilità dipendono dalla lunghezza e qualità del doppino, dalla diafonia, dal cablaggio interno e dal profilo adottato: non esiste una distanza limite universale.</p>
+            <div class="pros-cons"><p><strong>Punto di forza</strong> Valorizza la rete telefonica esistente.</p><p><strong>Limite</strong> Il tratto in rame condiziona la capacità.</p></div>
+          </div>
+        </article>
+        <article class="technology-detail" id="fttb">
+          <div class="detail-title"><span>Fibra fino all'edificio</span><h3>FTTB</h3></div>
+          <div class="detail-body">
+            <p>La fibra arriva a un punto comune dell'edificio. Da lì, un apparato di distribuzione collega le unità mediante il cablaggio interno, ad esempio doppino, Ethernet o coassiale, secondo la soluzione realizzata.</p>
+            <p class="connection-path">Centrale <span>→</span> fibra <span>→</span> apparato di edificio <span>→</span> cablaggio interno</p>
+            <p>Può evitare nuova fibra fino a ogni appartamento, ma richiede l'accesso agli spazi comuni e la valutazione del cablaggio. Le prestazioni dipendono dalla tecnologia e dalla qualità del tratto interno: G.fast è solo una delle possibili soluzioni.</p>
+            <div class="pros-cons"><p><strong>Punto di forza</strong> Può riutilizzare i collegamenti nell'edificio.</p><p><strong>Limite</strong> La rete interna può limitare il servizio.</p></div>
+          </div>
+        </article>
+        <article class="technology-detail" id="fwa">
+          <div class="detail-title"><span>Accesso wireless fisso</span><h3>FWA</h3></div>
+          <div class="detail-body">
+            <p>La rete dell'operatore raggiunge una sede fissa tramite un collegamento radio tra stazione base e apparato presso il cliente, spesso chiamato CPE. La stazione è a sua volta collegata alla rete di trasporto; la CPE può essere esterna o interna, a seconda della soluzione.</p>
+            <p class="connection-path">Rete di trasporto <span>→</span> stazione radio <span>→</span> collegamento radio <span>→</span> CPE</p>
+            <p>FWA può usare tecnologie radio dedicate o cellulari, ma indica un servizio di accesso a una sede fissa, non semplicemente l'uso domestico di un telefono mobile. Ostacoli, frequenza, segnale, capacità della cella e condizioni ambientali possono influire sul risultato.</p>
+            <div class="pros-cons"><p><strong>Punto di forza</strong> Può raggiungere sedi senza un nuovo cavo finale.</p><p><strong>Limite</strong> Dipende dalle condizioni radio e dalla capacità disponibile.</p></div>
+          </div>
+        </article>
+        <article class="technology-detail" id="adsl">
+          <div class="detail-title"><span>Linea digitale asimmetrica</span><h3>ADSL</h3></div>
+          <div class="detail-body">
+            <p>ADSL usa il doppino telefonico tra centrale e utente, con capacità normalmente maggiore in download che in upload. Il DSLAM in centrale comunica con il modem dell'utente; un filtro può separare voce analogica e dati quando condividono la linea.</p>
+            <p class="connection-path">Centrale / DSLAM <span>→</span> doppino in rame <span>→</span> modem</p>
+            <p>La rete telefonica esistente può essere riutilizzata, ma distanza dalla centrale, condizioni del rame e disturbi incidono sulle prestazioni. Le capacità sono generalmente inferiori a quelle delle soluzioni più recenti.</p>
+            <div class="pros-cons"><p><strong>Punto di forza</strong> Riutilizza il doppino telefonico.</p><p><strong>Limite</strong> Capacità e prestazioni dipendono molto dalla linea.</p></div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="content-section" id="confronto">
+      <div class="container">
+        <div class="content-heading"><h2>Un confronto <span>essenziale.</span></h2><p>Le caratteristiche effettive variano tra reti e offerte. Su schermi piccoli la tabella può scorrere lateralmente.</p></div>
+        <div class="table-wrap" tabindex="0" role="region" aria-label="Tabella comparativa delle tecnologie, scorribile orizzontalmente">
+          <table><caption>Confronto tra tecnologie di accesso</caption>
+            <thead><tr><th scope="col">Tecnologia</th><th scope="col">Mezzo e architettura</th><th scope="col">Vantaggio</th><th scope="col">Limite</th><th scope="col">Ruolo in Italia</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">FTTH</th><td>Fibra fino all'unità</td><td>Elevata capacità potenziale</td><td>Richiede posa fino all'utente</td><td>Reti realizzate con investimenti privati e piani pubblici</td></tr>
+              <tr><th scope="row">FTTC</th><td>Fibra fino all'armadio, poi rame</td><td>Riutilizzo del doppino</td><td>Distanza e qualità del rame</td><td>Soluzione mista presente sul territorio</td></tr>
+              <tr><th scope="row">FTTB</th><td>Fibra fino all'edificio, poi cablaggio interno</td><td>Possibile riuso dei cavi interni</td><td>Dipende dalla rete dell'edificio</td><td>Soluzione presente in alcune reti e edifici</td></tr>
+              <tr><th scope="row">FWA</th><td>Radio dalla stazione base alla sede</td><td>Ultimo tratto senza cavo</td><td>Condizioni radio e capacità condivisa</td><td>Alternativa di accesso anche in aree difficili da cablare</td></tr>
+              <tr><th scope="row">ADSL</th><td>Doppino dalla centrale all'utente</td><td>Riuso della rete telefonica</td><td>Capacità condizionata dalla linea</td><td>Tecnologia tradizionale ancora presente in alcune aree</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <section class="content-section components-section" id="componenti">
+      <div class="container"><div class="content-heading"><h2>I componenti <span>della rete.</span></h2><p>Gli apparati non sono tutti presenti in ogni architettura; alcune funzioni possono essere integrate nello stesso dispositivo.</p></div>
+        <dl class="definition-grid">
+          <div><dt>OLT</dt><dd>Optical Line Terminal: apparato di rete che gestisce le connessioni ottiche verso gli utenti.</dd></div>
+          <div><dt>ONT</dt><dd>Optical Network Terminal: termina la connessione ottica presso l'utente e la rende disponibile agli apparati locali.</dd></div>
+          <div><dt>ODN</dt><dd>Optical Distribution Network: rete di distribuzione ottica passiva, composta da fibre, giunti e altri elementi.</dd></div>
+          <div><dt>Splitter</dt><dd>Componente passivo che distribuisce il segnale ottico tra più rami della rete PON.</dd></div>
+          <div><dt>DSLAM</dt><dd>Apparato in centrale o armadio che aggrega e gestisce le linee DSL sul rame.</dd></div>
+          <div><dt>Modem</dt><dd>Adatta e modula i segnali per comunicare attraverso il mezzo di accesso, ad esempio il doppino DSL.</dd></div>
+          <div><dt>Router</dt><dd>Instrada i dati tra la rete locale e altre reti; può integrare Wi-Fi e altre funzioni.</dd></div>
+          <div><dt>CPE</dt><dd>Customer Premises Equipment: apparato installato presso il cliente, come un terminale radio FWA.</dd></div>
+        </dl>
+      </div>
+    </section>
+    <section class="content-section" id="prestazioni">
+      <div class="container"><div class="content-heading"><h2>Le prestazioni, <span>in pratica.</span></h2><p>Una sigla non racconta da sola l'esperienza di navigazione. È importante distinguere ciò che si confronta.</p></div>
+        <div class="reading-grid">
+          <div><h3>Nominale, commerciale, effettiva</h3><p>La capacità nominale è un valore previsto da uno standard o da un collegamento; quella commerciale descrive l'offerta dell'operatore. La velocità effettiva è quella misurata in un momento specifico e può dipendere da rete, dispositivi e server. Per le condizioni del servizio fanno fede le informazioni contrattuali.</p></div>
+          <div><h3>Latenza e stabilità</h3><p>La latenza è il tempo impiegato dai dati per raggiungere una destinazione; nei test si misura spesso il tempo di andata e ritorno. Percorso, carico e apparati contano. La stabilità riguarda la continuità del servizio e la variazione delle prestazioni: nessuna tecnologia assicura valori universali.</p></div>
+          <div><h3>Cosa può incidere</h3><p>Congestione, distanza e qualità del collegamento, cablaggio interno e interferenze possono influenzare la connessione. Anche il Wi-Fi domestico può essere il collo di bottiglia: distanza dal router, ostacoli e dispositivi incidono indipendentemente dalla linea di accesso.</p></div>
+        </div>
+      </div>
+    </section>
+    <section class="content-section italy-section" id="italia">
+      <div class="container"><div class="content-heading"><h2>Come leggere <span>i dati italiani.</span></h2><p>Le misure non sono intercambiabili: confronta sempre definizioni, periodo e metodologia della fonte.</p></div>
+        <dl class="definition-grid">
+          <div><dt>Copertura potenziale</dt><dd>Possibilità stimata o dichiarata di raggiungere una zona o un'unità, secondo i criteri della rilevazione.</dd></div>
+          <div><dt>Civici raggiunti</dt><dd>Indirizzi censiti come raggiunti secondo la definizione adottata; non implicano necessariamente un servizio attivabile.</dd></div>
+          <div><dt>Infrastrutture realizzate</dt><dd>Opere effettivamente costruite, da distinguere dalla loro eventuale attivazione commerciale.</dd></div>
+          <div><dt>Servizi disponibili</dt><dd>Offerte attivabili a un indirizzo: dipendono anche da operatore, condizioni tecniche e verifiche aggiornate.</dd></div>
+          <div><dt>Abbonamenti attivi</dt><dd>Accessi effettivamente sottoscritti: misurano l'adozione, non la copertura potenziale.</dd></div>
+        </dl>
+        <p class="section-note">Per dati e metodologie consulta le <a href="https://geo.agcom.it/fisso/">mappe AGCOM della rete fissa</a>, la <a href="https://geo.agcom.it/fwa/">mappa FWA</a>, gli <a href="https://www.agcom.it/pubblicazioni/osservatori">osservatori AGCOM</a> e il <a href="https://bandaultralarga.italia.it/">portale Banda Ultra Larga</a>.</p>
+      </div>
+    </section>
+    <section class="content-section" id="fonti-tecniche">
+      <div class="container"><div class="content-heading"><h2>Fonti e <span>riferimenti.</span></h2><p>Documenti tecnici e portali istituzionali utilizzati per questa guida.</p></div>
+        <ul class="source-list">
+          <li><a href="https://www.itu.int/rec/T-REC-G.984.2/en">ITU-T G.984.2 — livello fisico GPON</a><span>Specifiche delle interfacce ottiche GPON.</span></li>
+          <li><a href="https://www.itu.int/rec/T-REC-G.9807.1/en">ITU-T G.9807.1 — XGS-PON</a><span>Specifiche della rete ottica passiva simmetrica.</span></li>
+          <li><a href="https://www.itu.int/rec/T-REC-G.993.2/en">ITU-T G.993.2 — VDSL2</a><span>Specifiche dei ricetrasmettitori VDSL2.</span></li>
+          <li><a href="https://www.itu.int/rec/T-REC-G.992.1/en">ITU-T G.992.1 — ADSL</a><span>Specifiche dei ricetrasmettitori ADSL.</span></li>
+          <li><a href="https://digital-strategy.ec.europa.eu/en/library/comparison-broadband-technologies">Commissione europea — confronto delle tecnologie a banda larga</a><span>Confronto di mezzi, infrastrutture e caratteristiche delle tecnologie di accesso.</span></li>
+          <li><a href="https://geo.agcom.it/fisso/">AGCOM — mappa della rete fissa</a> e <a href="https://geo.agcom.it/fwa/">mappa FWA</a><span>Riferimenti per la mappatura delle reti.</span></li>
+          <li><a href="https://www.agcom.it/pubblicazioni/osservatori">AGCOM — osservatori</a> e <a href="https://bandaultralarga.italia.it/">Banda Ultra Larga</a><span>Pubblicazioni sul mercato e informazioni sui piani pubblici.</span></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-about">
+          <a class="brand footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span><span>Fiber<span class="brand-accent">Check</span></span></a>
+          <p>Un progetto indipendente per comprendere meglio la connettività e le infrastrutture di rete in Italia.</p>
+          <a class="github-button" href="https://github.com/matteocomo/FiberCheck"><img src="assets/images/github.svg" alt="" width="17" height="17"> Star su GitHub <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"/></svg></a>
+        </div>
+        <nav class="footer-column" aria-label="Navigazione nel footer"><p class="footer-label">NAVIGAZIONE</p>
+        <a href="index.html">Home</a>
+        <a href="tecnologie.html">Tecnologie</a>
+        <a href="aree-infrastrutturali.html">Aree di copertura</a>
+        <a href="piano-bul.html">Piano BUL</a>
+        <a href="enti-fonti.html">Enti e istituzioni</a>
+        <a href="verifica-copertura.html">Verifica copertura</a>
+        <a href="glossario.html">Glossario</a>
+        </nav>
+        <div class="footer-column"><p class="footer-label">TRASPARENZA</p><a href="index.html#progetto">Il progetto</a><a href="index.html#fonti">Fonti</a><span>Note legali e privacy:<br>documentazione in preparazione.</span><span>Questo sito non usa cookie, analytics o tracker.</span></div>
+      </div>
+      <div class="footer-bottom"><span>© FiberCheck · Progetto informativo senza scopo di lucro</span><span>Indipendente. Nessuna affiliazione con operatori o istituzioni.</span><a href="#contenuto">TORNA SU ↑</a></div>
+    </div>
+  </footer>
+</body>
+</html>
